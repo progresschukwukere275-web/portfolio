@@ -1,0 +1,339 @@
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+   margin: 0;
+    padding: 0; 
+     box-sizing: border-box; /* WHY: Makes width/height easier to control by including padding and border inside the element's size */
+}
+.navBar{
+    width: 100%;
+    display: flex;                 /*make navBar a flex container*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 2px;
+}
+.middleLinks{
+    display: flex;                    /*makes the 4 middle links a row*/
+    list-style: none;
+    gap: 20px;
+}
+.middleLinks a{
+    text-decoration: none;
+    color: black;
+}
+
+.middleLinks a:hover{
+    color: blue;       /*WHY IS THIS NOT WORKING*/
+}
+
+.leftlogo{
+    color: black;
+     text-decoration: none;
+     margin-left: 30px;
+     font-weight: bold;
+}
+.rightLogo{
+    background-color: blue;
+    color: white;
+    padding: 5px 8px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 7px;
+    margin-right: 40px;
+}
+
+/*HERO SECTION*/
+.heroSection{
+    display: flex;    /*Put text & image side by side*/
+    padding: 80px 20px;  /*UP down & SIDE space*/
+    background-color: #f8faff;
+}
+.tag{
+    background-color: white;
+    color: blue;
+    padding: 8px 8px ;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.heroText{
+    
+}
+.heroText h1{
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+.heroText h2{
+    color: blue;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: 700;       /*WITHOUT PX E NO GO SHOW*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heroText p{
+line-height: 1.6;
+margin-bottom: 30px;
+}
+.heroButton{
+    display: flex;
+    gap: 40px;
+}
+.heroBlueBtn{
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;        /*WITHOUT PX E  SHOW*/
+}
+.heroWhiteBtn{
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ /*RIGHT SIDE IMAGE*/
+ .heroImage img{
+    width: 580px;
+ }
+
+ /*WHY SECTION*/
+ .why{
+    padding: 80px 20px;
+    text-align: center;
+ }
+ .why h2{
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .why p{
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .parentWhyCards{    /*Adding Flex Here makes d card sit side by side*/
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+ }
+ .card{
+    padding: 30px 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 8px rgb(134, 90, 90);
+    max-width: 250px;
+ }
+ .card h3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 0 10px;
+    font-size: 18px;
+ }
+ .card p{
+    font-size: 14px;
+    line-height: 1.6;
+ }
+
+ .iconCircle{
+     width: 50px;
+    background-color: #2563eb;
+    color: white;
+    height: 50px;
+    border-radius: 50%;     /*makes it a circle*/
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;   /*centers the circle*/
+    font-weight: 700;
+ }
+
+ /* HOW IT WORKS SECTION*/
+ .how{
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f8faff;
+ }
+ .how h2{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+ }
+ .parentSteps{
+    display: flex;
+    justify-content: center;  /* centers evrything */
+   /* align-items: flex-start;*/ /*aligns to the top*/
+   gap: 40px;
+   margin-top: 50px;
+ }
+ .step{
+    max-width: 250px;   /*So text doesnt get too wide*/
+ }
+
+ .stepNum{
+    width: 50px;
+    background-color: #2563eb;
+    height: 20px;
+    border-radius: 50%;    /*makes it a circle*/
+    padding: 20px;    /*makes it a circle*/
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;   /*centers the circle*/
+    font-weight: 700;
+ }
+ .step h3{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 8px;
+ }
+ .step p{
+    font-size: 14px;
+    line-height: 1.6;
+ }
+ .arrow{
+    font-size: 30px;
+    margin-top: 15px;     /*pushes the arrow down to align with d circle*/
+ }
+
+ /*EXAMPLE SECTION*/
+.example{
+    padding: 80px 20px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+}
+.exampleLeft h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.exampleLeft p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+/*left sise CODE BOX*/
+.codeBox{
+    background: #1e293b;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.codeTabs{
+    background-color: #0f172a;
+    padding: 10px 15px;
+    display: flex;
+    gap: 60px;
+}
+.codeTabs span{
+    color: #94a3b8;
+    font-size: 14px;
+    cursor: pointer;
+}
+.codeTabs .active{
+    color: white;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 5px;
+}
+.codeBox pre{
+    padding: 20px;
+    color: #e2e8f0;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 14px;
+    overflow-x: auto;
+}
+/* RIGHT SIDE - RESULT BOX */
+
+.exampleRight h3{
+    font-size: 18px;
+    margin-top: 50px;
+    color: #1e293b;
+}
+
+.resultBox{
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding:  10px 20px;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.resultBox h1{
+    font-size: 24px;
+    color: #1e293b;
+}
+
+.resultBox button{
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.success{
+    background: #dcfce7; /* light green */
+    color: #16a34a;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/*FOOTER SECTION*/
+.footer{
+    background-color: #0f172a;
+    padding: 10px;
+}
+.footer a{
+    color: white;
+    font-size: 10px;
+    font-weight: lighter;
+
+}
+
+/* WHY: Changes the main sections to fit smaller screens */
+@media (max-width: 768px) {
+
+    /* WHY: Puts hero text and image on top of each other */
+    .heroSection,
+    .example {
+        flex-direction: column;
+    }
+
+    /* WHY: Makes the image fit the phone screen */
+    .heroImage img {
+        width: 100%;
+    }
+
+    /* WHY: Allows the cards to move to the next line */
+    .parentWhyCards {
+        flex-wrap: wrap;
+    }
+
+    /* WHY: Puts the navigation items on top of each other */
+    .navBar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* WHY: Puts the steps one below another */
+    .parentSteps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* WHY: Prevents the example sections from becoming too wide */
+    .exampleLeft,
+    .exampleRight {
+        width: 100%;
+    }
+}
